@@ -1,0 +1,160 @@
+:root {
+    font-size: 12px;
+}
+
+body, div, main, h1, h2, img, span, figure, figcaption, ul, li, a, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    list-style: none;
+    font-weight: normal;
+    text-decoration: none;
+} 
+
+@font-face {
+    font-family: IMBPlexSans;
+    src: url('fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+.container {
+    width: 100%;
+    background-color: #1C1C1C;
+}
+
+main.box_flexivel {
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main.box_flexivel h1 {
+    display: none;
+}
+
+img.logo {
+    margin-top: 35px;
+}
+
+main.box_flexivel h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 2.6rem;
+    font-weight: 600;
+    font-family: IMBPlexSans;
+}
+
+ul.box_all_usuarios {
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+a span.nome_usuario {
+    margin: 8px;
+    font-size: 1.25rem;
+    font-family: IMBPlexSans;
+    display: block;
+    color: #808080;
+    font-weight: 600;
+}
+
+.usuario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5px;
+}
+
+figure.box_usuario {
+    max-width: 160px;
+    max-height: 160px;
+    border-radius: 8px;
+    display: inline-block;
+    position: relative;
+    border: 1.2px transparent;
+    transition: 1s;
+    overflow: hidden;
+}
+
+figure.box_usuario:hover {
+    transition: 1s;
+    cursor: pointer;
+    border: 1.5px solid #fff;
+}
+
+figure.box_usuario figcaption {
+    display: none;
+}
+
+figure.box_usuario img {
+    max-width: 160px;
+    max-height: 160px;
+    transform: scale(1);
+    transition: 0.8s;
+}
+
+figure.box_usuario img:hover {
+    transition: 0.8s;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+figure.box_novo_usuario {
+    max-width: 160px;
+    max-height: 160px;
+    display: inline-block;
+    border-radius: 8px;
+    border: 3.2px transparent;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+figure.box_novo_usuario:hover {
+    border: 3.2px solid #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+figure.box_novo_usuario figcaption {
+    display: none;
+}
+
+figure.box_novo_usuario img {
+    max-width: 100%;
+    max-height: 100%;
+    transition: 0.5s;
+    filter: contrast(400%) brightness(80%);
+}
+
+figure.box_novo_usuario img:hover {
+    filter: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button.botao_novo_usuario {
+    background-color: #1C1C1C;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    padding: 12px 35px;
+    margin: 50px;
+    color: #fff;
+    font-size: 1.4rem;
+    font-family: IMBPlexSans;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+button.botao_novo_usuario:hover {
+    background-color: #fff;
+    color: #1C1C1C;
+    cursor: pointer;
+    transition: 0.5;
+}
